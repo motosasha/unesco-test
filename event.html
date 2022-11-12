@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru-RU">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=3, minimum-scale=0.1">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="date=no">
+		<meta name="format-detection" content="address=no">
+		<meta name="format-detection" content="email=no">
+		<meta name="google" content="notranslate">
+		<meta name="HandheldFriendly" content="true">
+		<meta name="robots" content="index, follow">
+		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="img/favicon/site.webmanifest">
+		<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#0069b4">
+		<meta name="apple-mobile-web-app-title" content="title">
+		<meta name="application-name" content="Name">
+		<meta name="msapplication-TileColor" content="#0069b4">
+		<meta name="theme-color" content="#0069b4">
+		<title>Международная научно-практическая конференция «Цифровые технологии в среднем профессиональном образовании»</title>
+		<meta name="description" content="Описание">
+		<meta name="keywords" content="Ключевые слова">
+		<link rel="stylesheet" href="css/style.css"><script>// Убрать на html класс "no-js", добавить класс "js": с уровня стилей знаем работает ли JS
+document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+
+// Браузер и ОС
+function cth(c){document.documentElement.classList.add(c)}
+'ontouchstart' in window?cth('touch'):cth('no-touch');
+if(typeof InstallTrigger!=='undefined')cth('firefox');
+if(/constructor/i.test(window.HTMLElement)||(function(p){return p.toString()==="[object SafariRemoteNotification]"})(!window['safari']||(typeof safari!=='undefined'&&safari.pushNotification)))cth('safari');
+if(/*@cc_on!@*/false||!!document.documentMode)cth('ie');
+if(!(/*@cc_on!@*/false||!!document.documentMode)&&!!window.StyleMedia)cth('edge');
+if(!!window.chrome&&(!!window.chrome.webstore||!!window.chrome.runtime))cth('chrome');
+if(~navigator.appVersion.indexOf("Win"))cth('windows');
+if(~navigator.appVersion.indexOf("Mac"))cth('osx');
+if(~['iPad','iPhone','iPod'].indexOf(navigator.platform))cth('ios');
+if(~navigator.appVersion.indexOf("Linux"))cth('linux');
+
+// Добавление 1vh (использование: height: 100vh; height: calc(var(--vh, 1vh) * 100);) для фикса 100vh на мобилках
+// let vh = window.innerHeight * 0.01;
+// document.documentElement.style.setProperty('--vh', `${vh}px`);
+// window.addEventListener('resize', () => {
+//   let vh = window.innerHeight * 0.01;
+//   document.documentElement.style.setProperty('--vh', `${vh}px`);
+// });
+</script>
+	</head>
+
+	<body data-state><noscript>У вас отключен JavaScript. Это пугает.</noscript>
+		<div class="page">
+			<div class="page__header">
+				<header class="header">
+					<div class="grid">
+						<div class="header__inner">
+							<div class="header__col">
+								<h1 class="header__title" hidden="hidden">Национальная координационная Сеть ассоциированных школ в Российской Федерации</h1><a class="header__logo" href="index.html"><svg class="header__logo-img">
+										<use href="img/svgSprite.svg#logo__asp-nc_ru"></use>
+									</svg></a>
+							</div>
+							<div class="header__col">
+								<nav class="header__nav">
+									<ul class="header__list">
+										<li class="header__item"><a class="header__link" href="news.html">Новости</a></li>
+										<li class="header__item"><a class="header__link" href="about.html">О нас</a></li>
+										<li class="header__item"><a class="header__link" href="schools.html">САШ ЮНЕСКО в РФ</a></li>
+										<li class="header__item"><a class="header__link" href="experience.html">Обмен опытом</a></li>
+										<li class="header__item"><a class="header__link" href="contacts.html">Контакты</a></li>
+									</ul>
+								</nav>
+							</div>
+							<div class="header__col">
+								<div class="header__actions">
+									<div class="header__row"><a class="button button_large" id="" href="tel:89501234567">
+											<div class="button__title">+7 950 123 45 67</div>
+										</a><a class="button button_solid" id="" href="join.html"><svg class="button__icon">
+												<use href="img/svgSprite.svg#icon__globe"></use>
+											</svg>
+											<div class="button__title">Присоединиться к сети</div>
+										</a></div>
+									<div class="header__row">
+										<div class="buttons-set"><a class="button" id="" href="registration.html">
+												<div class="button__title">Регистрация</div>
+											</a><a class="button" id="" href="login.html">
+												<div class="button__title">Вход</div>
+											</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="header__col">
+								<div class="header__menu"><svg class="header__icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+										<path class="header__icon-dot" d="M2 2H4V4H2V2Z" stroke-width="0"></path>
+										<path class="header__icon-dot" d="M9 2H11V4H9V2Z" stroke-width="0"></path>
+										<path class="header__icon-dot" d="M18 2H16V4H18V2Z" stroke-width="0"></path>
+										<path class="header__icon-dot" d="M2 9H4V11H2V9Z" stroke-width="0"></path>
+										<path class="header__icon-dot" d="M11 9H9V11H11V9Z" stroke-width="0"></path>
+										<path class="header__icon-dot" d="M16 9H18V11H16V9Z" stroke-width="0"></path>
+										<path class="header__icon-dot" d="M4 16H2V18H4V16Z" stroke-width="0"></path>
+										<path class="header__icon-dot" d="M9 16H11V18H9V16Z" stroke-width="0"></path>
+										<path class="header__icon-dot" d="M18 16H16V18H18V16Z" stroke-width="0"></path>
+										<path class="header__icon-line" d="M10 10L3 3" stroke-linecap="square"></path>
+										<path class="header__icon-line" d="M10 10L17 3" stroke-linecap="square"></path>
+										<path class="header__icon-line" d="M10 10L17 17" stroke-linecap="square"></path>
+										<path class="header__icon-line" d="M10 10L3 17" stroke-linecap="square"></path>
+									</svg></div>
+							</div>
+						</div>
+					</div>
+				</header>
+			</div>
+			<div class="page__nav">
+				<div class="nav">
+					<div class="grid">
+						<div class="nav__inner">
+							<nav class="nav__nav">
+								<ul class="nav__list">
+									<li class="nav__item"><a class="nav__link" href="news.html">Новости</a></li>
+									<li class="nav__item"><a class="nav__link" href="about.html">О нас</a></li>
+									<li class="nav__item"><a class="nav__link" href="schools.html">САШ ЮНЕСКО в РФ</a></li>
+									<li class="nav__item"><a class="nav__link" href="experience.html">Обмен опытом</a></li>
+									<li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
+								</ul>
+							</nav>
+							<div class="nav__block">
+								<div class="nav__actions">
+									<div class="nav__row"><a class="button button_large button_invert" id="" href="tel:89501234567">
+											<div class="button__title">+7 950 123 45 67</div>
+										</a></div>
+									<div class="nav__row">
+										<div class="buttons-set"><a class="button button_invert" id="" href="registration.html">
+												<div class="button__title">Регистрация</div>
+											</a><a class="button button_invert" id="" href="login.html">
+												<div class="button__title">Вход</div>
+											</a></div>
+									</div>
+									<div class="nav__row"><a class="button button_invert" id="" href="join.html"><svg class="button__icon">
+												<use href="img/svgSprite.svg#icon__globe"></use>
+											</svg>
+											<div class="button__title">Присоединиться к сети</div>
+										</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page__main">
+				<section class="section article">
+					<div class="grid">
+						<div class="article__inner">
+							<div class="article__wrapper">
+								<div class="article__header"><a class="article__label" href="#">Конференция</a>
+									<h2 class="article__title">Международная научно-практическая конференция «Цифровые технологии в среднем профессиональном образовании»</h2>
+									<div class="tags article__tags">
+										<div class="tags__inner"><a class="tags__item" href="#">Медиа и информационная грамотность</a><a class="tags__item" href="#">Учимся жить вместе</a><a class="tags__item" href="#">Инклюзивность и равенство</a><a class="tags__item" href="#">ИКТ</a><a class="tags__item" href="#">Искусственный интеллект</a><a class="tags__item" href="#">Научное образование</a><a class="tags__item" href="#">Цели устойчивого развития (ЦУР)</a></div>
+									</div>
+									<p class="article__lead lead">В период с 21 по 24 сентября 2021 г. в столице Республики Татарстан г. Казань состоится Международный форум Kazan Digital Week-2021 — мероприятие, ориентированное на разработчиков и пользователей цифровых интеллектуальных технологий, созданных на их основе систем, сервисов и услуг.</p>
+								</div>
+								<div class="wysiwyg article__wysiwyg">
+									<p>В рамках этого мероприятия с 22 сентября по 24 сентября 2021 г. Министерство образования Республики Татарстан совместно с Центром ЮНЕВОК Университета управления «ТИСБИ» проводит Международную научно-практическую конференцию «Цифровые технологии в среднем профессиональном образовании».</p>
+									<h2>Цель конференции</h2>
+									<p>Конференция направлена на обсуждение актуальных вопросов среднего профессионального образования, связанных с применением цифровых технологий в деятельности организаций, в том числе дистанционного образования и цифровой образовательной среды.</p>
+									<p>Основные направления деятельности конференции:</p>
+									<ul>
+										<li>Цифровая трансформация образовательного процесса СПО (дискуссионная площадка для преподавателей общеобразовательных дисциплин, методистов СПО и других специалистов).</li>
+										<li>Опыт формирования digital skills у выпускника СПО (дискуссионная площадка для преподавателей информатики и ИКТ, для преподавателей спец. дисциплин в области IT). </li>
+										<li>Инструменты формирования профессиональной направленности школьников в условиях цифровизации (дискуссионная площадка для учителей, методистов Ассоциированных школ ЮНЕСКО, общеобразовательных школ).</li>
+										<li>Перспективы развития профессий в условиях цифровой экономики (дискуссионная площадка для преподавателей, мастеров производственного обучения, преподавателей спец. дисциплин, методистов СПО и других специалистов).</li>
+										<li>Цифровые и информационные технологии в самоопределении студентов СПО (дискуссионная площадка для преподавателей, мастеров производственного обучения, преподавателей спец. дисциплин, методистов СПО и других специалистов).</li>
+										<li>Медиаобразование и медиакомпетентность в эпоху цифровизации (дискуссионная площадка для преподавателей, мастеров производственного обучения, преподавателей спец. дисциплин, методистов СПО и других специалистов в области медиаобразования).</li>
+									</ul>
+									<p>К участию в конференции приглашаются ведущие зарубежные и российские учёные — специалисты в сфере профессионального и цифрового образования; руководители, педагоги, методисты профессионального образования; специалисты в области профессиональной ориентации и сопровождения профессионального самоопределения; разработчики цифровых образовательных продуктов и средств. Также Центры ЮНЕВОК по профессиональному образованию и подготовке кадров, Ассоциированные школы ЮНЕСКО, образовательные организации общего и среднего образования, учителя, методисты по профориентации.</p>
+									<p>По итогам конференции планируется издание Сборника научных статей. Сборнику будут присвоены коды ББК, УДК, номер ISBN. Сборник будет включён в Российский индекс научного цитирования (РИНЦ) и размещён в ELIBRARY постатейно. Публикация в электронном сборнике бесплатна для всех участников Конференции.</p>
+									<p>До 10 сентября необходимо выслать на <a href='mailto:meeting.spo.tisbi@gmail.com'>meeting.spo.tisbi@gmail.com</a> тезисы доклада либо статью для публикации в сборнике. В теме письма указать фамилию и тема доклада/статьи.</p>
+								</div>
+								<div class="article__additions">
+									<div class="box">
+										<div class="box__title">Файлы для скачивания</div>
+										<div class="box__list"><a class="document-link" href="#" target="_blank"><svg class="document-link__icon">
+													<use href="img/svgSprite.svg#icon__file_pdf"></use>
+												</svg>
+												<div class="document-link__inner">
+													<div class="document-link__title">Положение о конкурсе</div>
+													<div class="document-link__descr">12.2mb</div>
+												</div>
+											</a></div>
+									</div>
+									<div class="box">
+										<div class="box__title">Требования к оформлению материалов</div>
+										<div class="box__list">
+											<p class="paragraph">Рабочий язык: русский. Авторский оригинал оформляется в электронном виде в формате docx/doc. Формат листа — А4 книжной ориентации. Объем — от 3 до 15 страниц; 14 кегль, интервал 1,5; шрифт Times New Roman; абзац 1,25; поля: 20 мм — сверху, снизу; 30 мм — слева; 10 мм — справа; сноски в квадратных скобках внутри текста, список литературы в конце текста. В материалах не должно быть выделений, подстрочных символов.</p>
+											<p class="paragraph">Далее по центру название статьи печатается прописными буквами, шрифт жирный. Ниже через полуторный интервал строчными буквами — инициалы и фамилия автора(ов), ученая степень и полное название организации.</p>
+											<p class="paragraph">После отступа в 1 интервал следуют аннотация и ключевые слова, далее после отступа в 2 интервала следует основной текст. Список литературы отделяется также одним отступом и составляет не более 3-х источников.</p>
+											<p class="paragraph">Тезисы и статьи, содержащие плагиат и некорректные заимствования, а также статьи с оригинальностью текста менее 60% не могут быть приняты к печати. Научный руководитель выступает гарантом качества предоставляемых материалов.</p>
+										</div>
+									</div>
+									<div class="box">
+										<div class="box__title">Партнёры</div>
+										<div class="partner-list"><a class="partner-list__item" href="#">
+												<div class="partner-list__logo"><img class="partner-list__image" src="assets/img__partner_filler.webp" alt="ГАПОУ «Казанский педагогический колледж (ЦОПП)»" /></div>
+												<div class="partner-list__info">
+													<div class="partner-list__title">ГАПОУ «Казанский педагогический колледж (ЦОПП)»</div>
+												</div>
+											</a><a class="partner-list__item" href="#">
+												<div class="partner-list__logo"><img class="partner-list__image" src="assets/img__partner_filler.webp" alt="ГАПОУ «Казанский авиационно-технический колледж им. П. В. Дементьева»" /></div>
+												<div class="partner-list__info">
+													<div class="partner-list__title">ГАПОУ «Казанский авиационно-технический колледж им. П. В. Дементьева»</div>
+												</div>
+											</a><a class="partner-list__item" href="#">
+												<div class="partner-list__logo"><img class="partner-list__image" src="assets/img__partner_filler.webp" alt="ГАПОУ «Казанский торгово-экономический техникум»" /></div>
+												<div class="partner-list__info">
+													<div class="partner-list__title">ГАПОУ «Казанский торгово-экономический техникум»</div>
+												</div>
+											</a><a class="partner-list__item" href="#">
+												<div class="partner-list__logo"><img class="partner-list__image" src="assets/img__partner_filler.webp" alt="ГАПОУ «Международный центр компетенций — Казанский техникум информационных технологий и связи»" /></div>
+												<div class="partner-list__info">
+													<div class="partner-list__title">ГАПОУ «Международный центр компетенций — Казанский техникум информационных технологий и связи»</div>
+												</div>
+											</a></div>
+									</div>
+									<div class="box">
+										<div class="box__title">При поддержке</div>
+										<div class="partner-list"><a class="partner-list__item" href="#">
+												<div class="partner-list__logo"><img class="partner-list__image" src="assets/img__partner_filler.webp" alt="Проект «Movavi» Образование, ООО «ТауКонсалт» ТМ Movavi" /></div>
+												<div class="partner-list__info">
+													<div class="partner-list__title">Проект «Movavi» Образование, ООО «ТауКонсалт» ТМ Movavi</div>
+													<div class="partner-list__descr">Россия, г. Урюпинск</div>
+												</div>
+											</a><a class="partner-list__item" href="#">
+												<div class="partner-list__logo"><img class="partner-list__image" src="assets/img__partner_filler.webp" alt="Проект «Canva for Education», Canva Pty Ltd" /></div>
+												<div class="partner-list__info">
+													<div class="partner-list__title">Проект «Canva for Education», Canva Pty Ltd</div>
+													<div class="partner-list__descr">Сидней, Австралия</div>
+												</div>
+											</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="article__info"><time class="article__date" datetime="2021-08-10T09:00">10 августа 2021, 9:00</time>
+								<div class="kv-block">
+									<div class="kv-block__title">Автор</div>
+									<div class="kv-block__body"><a class="kv-block__link" href="#">Национальный координационный центр</a></div>
+								</div>
+								<div class="kv-block">
+									<div class="kv-block__title">Уровень</div>
+									<div class="kv-block__body"><a class="kv-block__link" href="#">Международный</a></div>
+								</div>
+								<div class="kv-block">
+									<div class="kv-block__title">Тип</div>
+									<div class="kv-block__body">
+										<div class="kv-block__descr">Апробация педагогических материалов, предложенных ЮНЕСКО</div>
+									</div>
+								</div>
+								<div class="kv-block">
+									<div class="kv-block__title">Регион</div>
+									<div class="kv-block__body"><a class="kv-block__link" href="#">Волга</a></div>
+								</div>
+								<div class="kv-block">
+									<div class="kv-block__title">Рубрика</div>
+									<div class="kv-block__body"><a class="kv-block__link" href="#">Межкультурное образование</a><a class="kv-block__link" href="#">Устойчивое развитие</a></div>
+								</div>
+								<div class="kv-block">
+									<div class="kv-block__title">Тематика</div>
+									<div class="kv-block__body"><a class="kv-block__link" href="#">Устойчивое развитие</a></div>
+								</div>
+							</div>
+							<div class="article__side">
+								<div class="box">
+									<div class="box__list">
+										<div class="kv-block">
+											<div class="kv-block__title">Начало мероприятия</div>
+											<div class="kv-block__body">
+												<div class="kv-block__descr">21-24 сентября 2021, 10:00</div>
+											</div>
+										</div>
+										<div class="kv-block">
+											<div class="kv-block__title">Приём заявок</div>
+											<div class="kv-block__body">
+												<div class="kv-block__descr">10 августа 2021, с 9:00 до 23:00</div>
+											</div>
+										</div>
+										<div class="kv-block">
+											<div class="kv-block__title">Формат проведения</div>
+											<div class="kv-block__body">
+												<div class="kv-block__descr">Смешанный (очно-заочно-дистанционный)</div>
+											</div>
+										</div>
+										<div class="kv-block">
+											<div class="kv-block__title">Форма участия в конференции</div>
+											<div class="kv-block__body">
+												<div class="kv-block__descr">очное, очно-дистанционное: выступление с докладом, участие в обсуждении докладов, дискуссий; заочное — публикация научных материалов.</div>
+											</div>
+										</div>
+										<div class="kv-block">
+											<div class="kv-block__title">Место проведения</div>
+											<div class="kv-block__body">
+												<div class="kv-block__descr">УВО «Университет управления «ТИСБИ». Россия, 420012, Республика Татарстан, г. Казань, ул. Муштари, д. 13</div>
+											</div>
+										</div>
+										<div class="kv-block">
+											<div class="kv-block__title">Сборник/печатное издание</div>
+											<div class="kv-block__body">
+												<div class="kv-block__descr">Планируется</div>
+											</div>
+										</div>
+										<div class="kv-block">
+											<div class="kv-block__title">Язык</div>
+											<div class="kv-block__body">
+												<div class="kv-block__descr">Русский, Английский</div>
+											</div>
+										</div>
+									</div>
+									<div class="box__footer"><a class="button button_solid" id="" href="#">
+											<div class="button__title">Принять участие</div>
+										</a>
+										<div class="box__footer-inner"><a class="button button_iconized" href="#" id=""><svg class="button__icon">
+													<use href="img/svgSprite.svg#icon__print"></use>
+												</svg></a><a class="button button_iconized" href="#" id=""><svg class="button__icon">
+													<use href="img/svgSprite.svg#icon__share"></use>
+												</svg></a></div>
+									</div>
+								</div>
+								<div class="box">
+									<div class="box__title">Подключиться к конференции Zoom</div>
+									<div class="box__list">
+										<div class="conference">
+											<div class="conference__row">Идентификатор конференции: <span>864 6030 3336</span></div>
+											<div class="conference__row">Код доступа: <span>622239</span></div><a class="button button_solid conference__button" id="" href="#">
+												<div class="button__title">Войти в конференцию</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="box">
+									<div class="box__title">Контактные данные</div>
+									<div class="box__list">
+										<div class="contacts-list">
+											<div class="contacts-list__item"><a class="contacts-list__person" href="#"><span>Ларионова</span> Наталья Борисовна</a><a class="contacts-list__link" href="tel:88432948333">8 (843) 294-83-33</a><a class="contacts-list__link" href="mailto:meeting.spo.tisbi@gmail.com">meeting.spo.tisbi@gmail.com</a></div>
+											<div class="contacts-list__item"><a class="contacts-list__person" href="#"><span>Александрова</span> Елена Викторовна</a><a class="contacts-list__link" href="tel:88432948344">8 (843) 294-83-44</a><a class="contacts-list__link" href="mailto:alexoev@gmail.com">alexoev@gmail.com</a></div>
+										</div>
+									</div>
+								</div>
+								<div class="box">
+									<div class="box__title">Связанные новости</div>
+									<div class="box__list">
+										<div class="news-list">
+											<div class="news-list__item">
+												<div class="news-list__date">23 декабря 2022</div><a class="news-list__link" href="#">Министр иностранных дел России отметил деятельность ТИСБИ</a>
+											</div>
+											<div class="news-list__item">
+												<div class="news-list__date">24 декабря 2022</div><a class="news-list__link" href="#">Ассоциированные школы ЮНЕСКО Республики Башкортостан подвели итоги года</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="page__footer">
+				<footer class="footer">
+					<div class="grid">
+						<div class="footer__inner">
+							<div class="footer__col"><a class="footer__logo" href="index.html"><svg class="footer__logo-img">
+										<use href="img/svgSprite.svg#logo__asp-nc_ru"></use>
+									</svg></a></div>
+							<div class="footer__col">
+								<div class="footer-links footer__links">
+									<div class="footer-links__section"><a class="footer-links__title" href="about.html">О нас</a></div>
+									<div class="footer-links__section"><a class="footer-links__title" href="contacts.html">Контакты</a></div>
+									<div class="footer-links__section"><a class="footer-links__title" href="news.html">Новости</a>
+										<ul class="footer-links__list">
+											<li class="footer-links__item"><a class="footer-links__link" href="#">Образование</a></li>
+											<li class="footer-links__item"><a class="footer-links__link" href="#">Наука</a></li>
+											<li class="footer-links__item"><a class="footer-links__link" href="#">Культура</a></li>
+											<li class="footer-links__item"><a class="footer-links__link" href="#">Коммуникация и информация</a></li>
+											<li class="footer-links__item"><a class="footer-links__link" href="#">ООН и ЮНЕСКО</a></li>
+											<li class="footer-links__item"><a class="footer-links__link" href="#">Окружающая среда</a></li>
+										</ul>
+									</div>
+									<div class="footer-links__section"><a class="footer-links__title" href="schools.html">САШ ЮНЕСКО в РФ</a>
+										<ul class="footer-links__list">
+											<li class="footer-links__item"><a class="footer-links__link" href="#">Москва</a></li>
+											<li class="footer-links__item"><a class="footer-links__link" href="#">Юг–Кавказ</a></li>
+											<li class="footer-links__item"><a class="footer-links__link" href="#">Волга</a></li>
+											<li class="footer-links__item"><a class="footer-links__link" href="#">Урал</a></li>
+											<li class="footer-links__item"><a class="footer-links__link" href="#">Сибирь–Алтай</a></li>
+											<li class="footer-links__item"><a class="footer-links__link" href="#">Центр</a></li>
+											<li class="footer-links__item"><a class="footer-links__link" href="#">Балтика–Север</a></li>
+											<li class="footer-links__item"><a class="footer-links__link" href="#">Саха–Байкал</a></li>
+											<li class="footer-links__item"><a class="footer-links__link" href="#">Башкортостан</a></li>
+										</ul>
+									</div>
+									<div class="footer-links__section"><a class="footer-links__title" href="experience.html">Обмен опытом</a></div>
+								</div>
+							</div>
+							<div class="footer__col">
+								<div class="footer-banners footer__banners"><a class="footer-banners__item" href="https://www.unesco.org" aria-label="Организация Объединённых Наций по вопросам образования, науки и культуры" title="Организация Объединённых Наций по вопросам образования, науки и культуры" target="_blanc" rel="noopener"><svg class="footer-banners__icon">
+											<use href="img/svgSprite.svg#logo__unesco"></use>
+										</svg></a><a class="footer-banners__item" href="http://www.unesco.ru/" aria-label="Комиссия Российской Федерации по делам ЮНЕСКО" title="Комиссия Российской Федерации по делам ЮНЕСКО" target="_blanc" rel="noopener"><svg class="footer-banners__icon">
+											<use href="img/svgSprite.svg#logo__rf-com_ru"></use>
+										</svg></a><a class="footer-banners__item" href="#" aria-label="Ассоциированные школы ЮНЕСКО" title="Ассоциированные школы ЮНЕСКО" target="_blanc" rel="noopener"><svg class="footer-banners__icon">
+											<use href="img/svgSprite.svg#logo__asn"></use>
+										</svg></a></div>
+								<div class="footer__actions">
+									<div class="footer__socials"><a class="footer__social footer__social_tg" href="https://t.me/+9qp3JVV--tM5Yjg6" target="_blanc">Наш чат в Telegram</a><a class="footer__social" href="#" target="_blanc">#ассоциированныеШколыЮНЕСКО</a><a class="footer__social" href="#" target="_blanc">#ассоциированныеШколыЮНЕСКОрулят</a></div>
+									<div class="footer__policy"><a class="footer__policy-link" href="#" target="_blanc">Пользовательское соглашение</a>
+										и <a class="footer__policy-link" href="#" target="_blanc">Политика конфиденциальности</a></div>
+									<div class="footer__button-wrap"><a class="button button_invert" id="" href="" data-hystmodal="#popup-feedback">
+											<div class="button__title">Связаться с нами</div>
+										</a><a class="button button_invert" id="" href="" data-hystmodal="#popup-subscription">
+											<div class="button__title">Подписаться на рассылку</div>
+										</a></div>
+								</div>
+							</div>
+							<div class="footer__col">
+								<div class="footer__row">
+									<div class="footer__copy">Университет управления «ТИСБИ»</div>
+									<div class="footer__madein">Сделано в<a class="footer__madein-link" href="https://www.tisbi.ru/" aria-label="Университет управления «ТИСБИ»" title="Университет управления «ТИСБИ»" target="_blanc" rel="noopener"><svg class="footer__madein-logo">
+												<use href="img/svgSprite.svg#logo__tisbi_ru"></use>
+											</svg></a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+			<div class="page__darker"></div>
+			<div class="page__to-top-button" title="Наверх"><svg class="page__icon">
+					<use href="img/svgSprite.svg#icon__arrow_up"></use>
+				</svg></div>
+			<div class="hystmodal" id="popup-feedback" aria-hidden="true">
+				<div class="hystmodal__wrap">
+					<div class="hystmodal__window popup" role="dialog" aria-modal="true"><button class="hystmodal__close popup__close" data-hystclose="" title="Закрыть">Закрыть<svg class="popup__icon">
+								<use href="img/svgSprite.svg#icon__cross"></use>
+							</svg></button>
+						<div class="popup__inner">
+							<h2 class="popup__title">Связаться с нами</h2>
+							<p class="popup__descr">Если у вас есть вопросы о работе сети Ассоциированных школ ЮНЕСКО в РФ или пожелания, свяжитесь с нами</p>
+							<form class="form popup__form">
+								<div class="form__inner"><label class="form__field"><input class="input form__input" id="feedbackFio" type="text" placeholder="ФИО" required="required" /></label><label class="form__field"><input class="input form__input" id="feedbackEmail" type="email" placeholder="Электронная почта" required="required" /></label><label class="form__field"><textarea class="textarea form__textarea" id="feedbackMessage" placeholder="Сообщение" required="required"></textarea></label><button class="button button_solid button_large form__submit" id="">
+										<div class="button__title">Отправить</div>
+									</button></div><small class="form__small">Нажимая кнопку «Отправить» вы принимаете условия <a class='link' href='#' target='_blank'>Пользовательского соглашения</a> и даёте согласие на обработку своих персональных данных на условиях, определенных <a class='link' href='#' target='_blank'>Политикой конфиденциальности</a>.</small><small class="form__small">Этот сайт защищён reCAPTCHA и использует <a class='link' href='https://policies.google.com/privacy' target='_blank'>Политику конфиденциальности</a> и <a class='link' href='https://policies.google.com/terms' target='_blank'>Условия использования Google</a>.</small>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hystmodal" id="popup-feedback-thanks" aria-hidden="true">
+				<div class="hystmodal__wrap">
+					<div class="hystmodal__window popup" role="dialog" aria-modal="true"><button class="hystmodal__close popup__close" data-hystclose="" title="Закрыть">Закрыть<svg class="popup__icon">
+								<use href="img/svgSprite.svg#icon__cross"></use>
+							</svg></button>
+						<div class="popup__inner">
+							<h2 class="popup__title">Мы получили ваше сообщение</h2>
+							<p class="popup__descr">Мы свяжемся с вами</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hystmodal" id="popup-subscription" aria-hidden="true">
+				<div class="hystmodal__wrap">
+					<div class="hystmodal__window popup" role="dialog" aria-modal="true"><button class="hystmodal__close popup__close" data-hystclose="" title="Закрыть">Закрыть<svg class="popup__icon">
+								<use href="img/svgSprite.svg#icon__cross"></use>
+							</svg></button>
+						<div class="popup__inner">
+							<h2 class="popup__title">Подписаться на рассылку</h2>
+							<p class="popup__descr">Новости и мероприятия сети Ассоциированных школ ЮНЕСКО в РФ</p>
+							<form class="form popup__form">
+								<div class="form__inner"><label class="form__field"><input class="input form__input" id="subscriptionFio" type="text" placeholder="ФИО" required="required" /></label><label class="form__field"><input class="input form__input" id="subscriptionEmail" type="email" placeholder="Электронная почта" required="required" /></label><button class="button button_solid button_large form__submit" id="">
+										<div class="button__title">Подписаться</div>
+									</button></div><small class="form__small">Нажимая кнопку «Подписаться» вы принимаете условия <a class='link' href='#' target='_blank'>Пользовательского соглашения</a> и даёте согласие на обработку своих персональных данных на условиях, определенных <a class='link' href='#' target='_blank'>Политикой конфиденциальности</a>.</small><small class="form__small">Этот сайт защищён reCAPTCHA и использует <a class='link' href='https://policies.google.com/privacy' target='_blank'>Политику конфиденциальности</a> и <a class='link' href='https://policies.google.com/terms' target='_blank'>Условия использования Google</a>.</small>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hystmodal" id="popup-subscription-thanks" aria-hidden="true">
+				<div class="hystmodal__wrap">
+					<div class="hystmodal__window popup" role="dialog" aria-modal="true"><button class="hystmodal__close popup__close" data-hystclose="" title="Закрыть">Закрыть<svg class="popup__icon">
+								<use href="img/svgSprite.svg#icon__cross"></use>
+							</svg></button>
+						<div class="popup__inner">
+							<h2 class="popup__title">Вы подписаны на рассылку</h2>
+							<p class="popup__descr">Проверьте почту</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><script src="js/bundle.js"></script>
+	</body>
+</html>

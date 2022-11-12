@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru-RU">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=3, minimum-scale=0.1">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="date=no">
+		<meta name="format-detection" content="address=no">
+		<meta name="format-detection" content="email=no">
+		<meta name="google" content="notranslate">
+		<meta name="HandheldFriendly" content="true">
+		<meta name="robots" content="index, follow">
+		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="img/favicon/site.webmanifest">
+		<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#0069b4">
+		<meta name="apple-mobile-web-app-title" content="title">
+		<meta name="application-name" content="Name">
+		<meta name="msapplication-TileColor" content="#0069b4">
+		<meta name="theme-color" content="#0069b4">
+		<title>Присоединиться к сети</title>
+		<meta name="description" content="Описание">
+		<meta name="keywords" content="Ключевые слова">
+		<link rel="stylesheet" href="css/style.css"><script>// Убрать на html класс "no-js", добавить класс "js": с уровня стилей знаем работает ли JS
+document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+
+// Браузер и ОС
+function cth(c){document.documentElement.classList.add(c)}
+'ontouchstart' in window?cth('touch'):cth('no-touch');
+if(typeof InstallTrigger!=='undefined')cth('firefox');
+if(/constructor/i.test(window.HTMLElement)||(function(p){return p.toString()==="[object SafariRemoteNotification]"})(!window['safari']||(typeof safari!=='undefined'&&safari.pushNotification)))cth('safari');
+if(/*@cc_on!@*/false||!!document.documentMode)cth('ie');
+if(!(/*@cc_on!@*/false||!!document.documentMode)&&!!window.StyleMedia)cth('edge');
+if(!!window.chrome&&(!!window.chrome.webstore||!!window.chrome.runtime))cth('chrome');
+if(~navigator.appVersion.indexOf("Win"))cth('windows');
+if(~navigator.appVersion.indexOf("Mac"))cth('osx');
+if(~['iPad','iPhone','iPod'].indexOf(navigator.platform))cth('ios');
+if(~navigator.appVersion.indexOf("Linux"))cth('linux');
+
+// Добавление 1vh (использование: height: 100vh; height: calc(var(--vh, 1vh) * 100);) для фикса 100vh на мобилках
+// let vh = window.innerHeight * 0.01;
+// document.documentElement.style.setProperty('--vh', `${vh}px`);
+// window.addEventListener('resize', () => {
+//   let vh = window.innerHeight * 0.01;
+//   document.documentElement.style.setProperty('--vh', `${vh}px`);
+// });
+</script>
+	</head>
+
+	<body data-state><noscript>У вас отключен JavaScript. Это пугает.</noscript>
+		<div class="page">
+			<div class="page__header">
+				<header class="header">
+					<div class="grid">
+						<div class="header__inner">
+							<div class="header__col">
+								<h1 class="header__title" hidden="hidden">Национальная координационная Сеть ассоциированных школ в Российской Федерации</h1><a class="header__logo" href="index.html"><svg class="header__logo-img">
+										<use href="img/svgSprite.svg#logo__asp-nc_ru"></use>
+									</svg></a>
+							</div>
+							<div class="header__col">
+								<nav class="header__nav">
+									<ul class="header__list">
+										<li class="header__item"><a class="header__link" href="news.html">Новости</a></li>
+										<li class="header__item"><a class="header__link" href="about.html">О нас</a></li>
+										<li class="header__item"><a class="header__link" href="schools.html">САШ ЮНЕСКО в РФ</a></li>
+										<li class="header__item"><a class="header__link" href="experience.html">Обмен опытом</a></li>
+										<li class="header__item"><a class="header__link" href="contacts.html">Контакты</a></li>
+									</ul>
+								</nav>
+							</div>
+							<div class="header__col">
+								<div class="header__actions">
+									<div class="header__row"><a class="button button_large" id="" href="tel:89501234567">
+											<div class="button__title">+7 950 123 45 67</div>
+										</a><a class="button button_solid" id="" href="join.html"><svg class="button__icon">
+												<use href="img/svgSprite.svg#icon__globe"></use>
+											</svg>
+											<div class="button__title">Присоединиться к сети</div>
+										</a></div>
+									<div class="header__row">
+										<div class="buttons-set"><a class="button" id="" href="registration.html">
+												<div class="button__title">Регистрация</div>
+											</a><a class="button" id="" href="login.html">
+												<div class="button__title">Вход</div>
+											</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="header__col">
+								<div class="header__menu"><svg class="header__icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+										<path class="header__icon-dot" d="M2 2H4V4H2V2Z" stroke-width="0"></path>
+										<path class="header__icon-dot" d="M9 2H11V4H9V2Z" stroke-width="0"></path>
+										<path class="header__icon-dot" d="M18 2H16V4H18V2Z" stroke-width="0"></path>
+										<path class="header__icon-dot" d="M2 9H4V11H2V9Z" stroke-width="0"></path>
+										<path class="header__icon-dot" d="M11 9H9V11H11V9Z" stroke-width="0"></path>
+										<path class="header__icon-dot" d="M16 9H18V11H16V9Z" stroke-width="0"></path>
+										<path class="header__icon-dot" d="M4 16H2V18H4V16Z" stroke-width="0"></path>
+										<path class="header__icon-dot" d="M9 16H11V18H9V16Z" stroke-width="0"></path>
+										<path class="header__icon-dot" d="M18 16H16V18H18V16Z" stroke-width="0"></path>
+										<path class="header__icon-line" d="M10 10L3 3" stroke-linecap="square"></path>
+										<path class="header__icon-line" d="M10 10L17 3" stroke-linecap="square"></path>
+										<path class="header__icon-line" d="M10 10L17 17" stroke-linecap="square"></path>
+										<path class="header__icon-line" d="M10 10L3 17" stroke-linecap="square"></path>
+									</svg></div>
+							</div>
+						</div>
+					</div>
+				</header>
+			</div>
+			<div class="page__nav">
+				<div class="nav">
+					<div class="grid">
+						<div class="nav__inner">
+							<nav class="nav__nav">
+								<ul class="nav__list">
+									<li class="nav__item"><a class="nav__link" href="news.html">Новости</a></li>
+									<li class="nav__item"><a class="nav__link" href="about.html">О нас</a></li>
+									<li class="nav__item"><a class="nav__link" href="schools.html">САШ ЮНЕСКО в РФ</a></li>
+									<li class="nav__item"><a class="nav__link" href="experience.html">Обмен опытом</a></li>
+									<li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
+								</ul>
+							</nav>
+							<div class="nav__block">
+								<div class="nav__actions">
+									<div class="nav__row"><a class="button button_large button_invert" id="" href="tel:89501234567">
+											<div class="button__title">+7 950 123 45 67</div>
+										</a></div>
+									<div class="nav__row">
+										<div class="buttons-set"><a class="button button_invert" id="" href="registration.html">
+												<div class="button__title">Регистрация</div>
+											</a><a class="button button_invert" id="" href="login.html">
+												<div class="button__title">Вход</div>
+											</a></div>
+									</div>
+									<div class="nav__row"><a class="button button_invert" id="" href="join.html"><svg class="button__icon">
+												<use href="img/svgSprite.svg#icon__globe"></use>
+											</svg>
+											<div class="button__title">Присоединиться к сети</div>
+										</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page__main">
+				<section class="section join">
+					<div class="grid">
+						<div class="section__inner">
+							<div class="section__block">
+								<div class="section__grid">
+									<div class="section__col section__col_3"></div>
+									<div class="section__col section__col_9">
+										<h2 class="section__title" data-subtitle="Участие"><span>Присоединиться</span> к сети</h2>
+									</div>
+								</div>
+								<div class="section__grid">
+									<div class="section__col section__col_3"></div>
+									<div class="section__col section__col_9">
+										<p class="lead">Ассоциированные школы ЮНЕСКО — это международная Сеть, объединяющая дошкольные учебные учреждения, школы, учебные заведения среднего профессионального образования, институты повышения квалификации учителей и педагогические вузы.</p>
+									</div>
+								</div>
+							</div>
+							<div class="section__block">
+								<div class="section__grid">
+									<div class="section__col section__col_3 section__col_2_d section__col_offset_1_d">
+										<h3 class="section__subtitle">Как работает Сеть в России</h3>
+									</div>
+									<div class="section__col section__col_9 section__col_8_d">
+										<p class="paragraph">Каждая школа под руководством регионального, национального координационного центра работает на международном уровне, в региональных проектах и проектах на базе образовательного учреждения в рамках приоритетных направлений</p>
+									</div>
+								</div>
+							</div>
+							<div class="section__block">
+								<div class="section__grid">
+									<div class="section__col section__col_3 section__col_2_d section__col_offset_1_d">
+										<h3 class="section__subtitle">Наши преимущества</h3>
+									</div>
+									<div class="section__col section__col_9 section__col_8_dl section__col_6_dxl">
+										<div class="advantages">
+											<div class="advantages__row">
+												<div class="advantages__title">Учиться, чтобы знать</div>
+												<ul class="advantages__list">
+													<li class="advantages__item">широкий спектр общих знаний</li>
+													<li class="advantages__item">глубокое изучение избранных предметов</li>
+												</ul>
+											</div>
+											<div class="advantages__row">
+												<div class="advantages__title">Учиться, чтобы уметь</div>
+												<ul class="advantages__list">
+													<li class="advantages__item">новые профессиональные навыки</li>
+													<li class="advantages__item">готовность к действию в различных ситуациях</li>
+													<li class="advantages__item">работа в команде</li>
+												</ul>
+											</div>
+											<div class="advantages__row">
+												<div class="advantages__title">Учиться жить</div>
+												<ul class="advantages__list">
+													<li class="advantages__item">личностный рост и развитие как профессионала</li>
+													<li class="advantages__item">выработка самостоятельных решений</li>
+													<li class="advantages__item">использование собственных суждений и личной ответственности по максимуму</li>
+												</ul>
+											</div>
+											<div class="advantages__row">
+												<div class="advantages__title">Учиться жить вместе</div>
+												<ul class="advantages__list">
+													<li class="advantages__item">научим понимать других людей</li>
+													<li class="advantages__item">ценить взаимозависимость</li>
+												</ul>
+											</div><a class="button button_solid advantages__button" href="registration.html">Станьте частью команды сейчас</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="section__block">
+								<div class="section__grid">
+									<div class="section__col section__col_3 section__col_2_d section__col_offset_1_d">
+										<h3 class="section__subtitle">Как стать школой ЮНЕСКО?</h3>
+									</div>
+									<div class="section__col section__col_9 section__col_8_d">
+										<div class="inner-grid inner-grid_instructions">
+											<div class="inner-grid__section">
+												<div class="inner-grid__col">
+													<h4 class="inner-grid__title">Школа</h4>
+													<p class="inner-grid__descr">Ассоциированными школами ЮНЕСКО могут стать государственные и частные школы, а также педагогические учебные заведения. Возможность для этого имеют как формальные, так и неформальные учреждения дошкольного, начального, среднего, технического или педагогического образования.</p>
+													<div class="inner-grid__arrow-block"></div>
+												</div>
+												<div class="inner-grid__col">
+													<ol class="join__list" start="1">
+														<li class="join__item">Ознакомится со всеми документами и положениями о ЮНЕСКО и САШ<div class="join__documents"><a class="document-link" href="#" target="_blank"><svg class="document-link__icon">
+																		<use href="img/svgSprite.svg#icon__file_pdf"></use>
+																	</svg>
+																	<div class="document-link__inner">
+																		<div class="document-link__title">Стратегия Проекта «Ассоциированные школы ЮНЕСКО» на 2014-2021 гг.</div>
+																		<div class="document-link__descr">12.2mb</div>
+																	</div>
+																</a><a class="document-link" href="#" target="_blank"><svg class="document-link__icon">
+																		<use href="img/svgSprite.svg#icon__file_pdf"></use>
+																	</svg>
+																	<div class="document-link__inner">
+																		<div class="document-link__title">Положение ПАШ ЮНЕСКО</div>
+																		<div class="document-link__descr">12.2mb</div>
+																	</div>
+																</a><a class="document-link" href="#" target="_blank"><svg class="document-link__icon">
+																		<use href="img/svgSprite.svg#icon__file_pdf"></use>
+																	</svg>
+																	<div class="document-link__inner">
+																		<div class="document-link__title">Руководство для национальных координаторов</div>
+																		<div class="document-link__descr">12.2mb</div>
+																	</div>
+																</a><a class="document-link" href="#" target="_blank"><svg class="document-link__icon">
+																		<use href="img/svgSprite.svg#icon__file_pdf"></use>
+																	</svg>
+																	<div class="document-link__inner">
+																		<div class="document-link__title">Руководство для членов сети Ассоциированных школ ЮНЕСКО</div>
+																		<div class="document-link__descr">12.2mb</div>
+																	</div>
+																</a></div>
+														</li>
+														<li class="join__item"><a class="link" href="registration.html">Подать заявку</a></li>
+														<li class="join__item">Принимать участие в мероприятиях Сети, генерировать идеи и стать организатором мероприятий</li>
+													</ol>
+												</div>
+											</div>
+											<div class="inner-grid__section">
+												<div class="inner-grid__col">
+													<h4 class="inner-grid__title">Школа участник</h4>
+													<p class="inner-grid__descr">Школы на этапе рассмотрения заявок на присоединение к Сети, региональным и национальным координатором</p>
+													<div class="inner-grid__arrow-block"></div>
+												</div>
+												<div class="inner-grid__col">
+													<ol class="join__list" start="4">
+														<li class="join__item join__item_mark">Получить одобрение от регионального координатора</li>
+														<li class="join__item">Продолжать принимать участие в мероприятиях Сети, генерировать идеи и организовать мероприятий</li>
+													</ol>
+												</div>
+											</div>
+											<div class="inner-grid__section">
+												<div class="inner-grid__col">
+													<h4 class="inner-grid__title">Школа участник сети</h4>
+													<p class="inner-grid__descr">Ассоциированные школы ЮНЕСКО с официальным международным сертификатом</p>
+													<div class="inner-grid__arrow-block"></div>
+												</div>
+												<div class="inner-grid__col">
+													<ol class="join__list" start="6">
+														<li class="join__item join__item_mark">Получить одобрение от национального координационного центра</li>
+														<li class="join__item">Продолжать принимать участие в мероприятиях Сети, генерировать идеи и организовать мероприятий</li>
+													</ol>
+												</div>
+											</div>
+											<div class="inner-grid__section">
+												<div class="inner-grid__col">
+													<h4 class="inner-grid__title">Ассоциированная школа ЮНЕСКО</h4>
+													<p class="inner-grid__descr">Школы в ожидании получения официального международного сертификата, одобренные национальным координатором</p>
+													<div class="inner-grid__arrow-block"></div>
+												</div>
+												<div class="inner-grid__col">
+													<ol class="join__list" start="8">
+														<li class="join__item join__item_mark">Получить официальный международным сертификатом</li>
+														<li class="join__item">Продолжать принимать участие в мероприятиях Сети, генерировать идеи и организовать мероприятий</li>
+													</ol>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="section__block">
+								<div class="section__grid">
+									<div class="section__col section__col_3 section__col_2_d section__col_offset_1_d">
+										<h3 class="section__subtitle">Остались вопросы?</h3>
+									</div>
+									<div class="section__col section__col_9 section__col_8_d">
+										<div class="inner-grid inner-grid_form">
+											<div class="inner-grid__section">
+												<div class="inner-grid__col">
+													<h4 class="inner-grid__title">Если у вас остались вопросы о работе сети Ассоциированных школ ЮНЕСКО в РФ, свяжитесь с нами</h4>
+												</div>
+												<div class="inner-grid__col">
+													<form class="form contacts__form">
+														<div class="form__inner"><label class="form__field"><input class="input form__input" id="joinFio" type="text" placeholder="ФИО" required="required" /></label><label class="form__field"><input class="input form__input" id="joinEmail" type="email" placeholder="Электронная почта" required="required" /></label><label class="form__field"><textarea class="textarea form__textarea" id="joinMessage" placeholder="Сообщение" required="required"></textarea></label><button class="button button_solid button_large form__submit" id="">
+																<div class="button__title">Отправить</div>
+															</button></div><small class="form__small">Нажимая кнопку «Отправить» вы принимаете условия <a class='link' href='#' target='_blank'>Пользовательского соглашения</a> и даёте согласие на обработку своих персональных данных на условиях, определенных <a class='link' href='#' target='_blank'>Политикой конфиденциальности</a>.</small><small class="form__small">Этот сайт защищён reCAPTCHA и использует <a class='link' href='https://policies.google.com/privacy' target='_blank'>Политику конфиденциальности</a> и <a class='link' href='https://policies.google.com/terms' target='_blank'>Условия использования Google</a>.</small>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="page__footer">
+				<footer class="footer">
+					<div class="grid">
+						<div class="footer__inner">
+							<div class="footer__col"><a class="footer__logo" href="index.html"><svg class="footer__logo-img">
+										<use href="img/svgSprite.svg#logo__asp-nc_ru"></use>
+									</svg></a></div>
+							<div class="footer__col">
+								<div class="footer-links footer__links">
+									<div class="footer-links__section"><a class="footer-links__title" href="about.html">О нас</a></div>
+									<div class="footer-links__section"><a class="footer-links__title" href="contacts.html">Контакты</a></div>
+									<div class="footer-links__section"><a class="footer-links__title" href="news.html">Новости</a>
+										<ul class="footer-links__list">
+											<li class="footer-links__item"><a class="footer-links__link" href="#">Образование</a></li>
+											<li class="footer-links__item"><a class="footer-links__link" href="#">Наука</a></li>
+											<li class="footer-links__item"><a class="footer-links__link" href="#">Культура</a></li>
+											<li class="footer-links__item"><a class="footer-links__link" href="#">Коммуникация и информация</a></li>
+											<li class="footer-links__item"><a class="footer-links__link" href="#">ООН и ЮНЕСКО</a></li>
+											<li class="footer-links__item"><a class="footer-links__link" href="#">Окружающая среда</a></li>
+										</ul>
+									</div>
+									<div class="footer-links__section"><a class="footer-links__title" href="schools.html">САШ ЮНЕСКО в РФ</a>
+										<ul class="footer-links__list">
+											<li class="footer-links__item"><a class="footer-links__link" href="#">Москва</a></li>
+											<li class="footer-links__item"><a class="footer-links__link" href="#">Юг–Кавказ</a></li>
+											<li class="footer-links__item"><a class="footer-links__link" href="#">Волга</a></li>
+											<li class="footer-links__item"><a class="footer-links__link" href="#">Урал</a></li>
+											<li class="footer-links__item"><a class="footer-links__link" href="#">Сибирь–Алтай</a></li>
+											<li class="footer-links__item"><a class="footer-links__link" href="#">Центр</a></li>
+											<li class="footer-links__item"><a class="footer-links__link" href="#">Балтика–Север</a></li>
+											<li class="footer-links__item"><a class="footer-links__link" href="#">Саха–Байкал</a></li>
+											<li class="footer-links__item"><a class="footer-links__link" href="#">Башкортостан</a></li>
+										</ul>
+									</div>
+									<div class="footer-links__section"><a class="footer-links__title" href="experience.html">Обмен опытом</a></div>
+								</div>
+							</div>
+							<div class="footer__col">
+								<div class="footer-banners footer__banners"><a class="footer-banners__item" href="https://www.unesco.org" aria-label="Организация Объединённых Наций по вопросам образования, науки и культуры" title="Организация Объединённых Наций по вопросам образования, науки и культуры" target="_blanc" rel="noopener"><svg class="footer-banners__icon">
+											<use href="img/svgSprite.svg#logo__unesco"></use>
+										</svg></a><a class="footer-banners__item" href="http://www.unesco.ru/" aria-label="Комиссия Российской Федерации по делам ЮНЕСКО" title="Комиссия Российской Федерации по делам ЮНЕСКО" target="_blanc" rel="noopener"><svg class="footer-banners__icon">
+											<use href="img/svgSprite.svg#logo__rf-com_ru"></use>
+										</svg></a><a class="footer-banners__item" href="#" aria-label="Ассоциированные школы ЮНЕСКО" title="Ассоциированные школы ЮНЕСКО" target="_blanc" rel="noopener"><svg class="footer-banners__icon">
+											<use href="img/svgSprite.svg#logo__asn"></use>
+										</svg></a></div>
+								<div class="footer__actions">
+									<div class="footer__socials"><a class="footer__social footer__social_tg" href="https://t.me/+9qp3JVV--tM5Yjg6" target="_blanc">Наш чат в Telegram</a><a class="footer__social" href="#" target="_blanc">#ассоциированныеШколыЮНЕСКО</a><a class="footer__social" href="#" target="_blanc">#ассоциированныеШколыЮНЕСКОрулят</a></div>
+									<div class="footer__policy"><a class="footer__policy-link" href="#" target="_blanc">Пользовательское соглашение</a>
+										и <a class="footer__policy-link" href="#" target="_blanc">Политика конфиденциальности</a></div>
+									<div class="footer__button-wrap"><a class="button button_invert" id="" href="" data-hystmodal="#popup-feedback">
+											<div class="button__title">Связаться с нами</div>
+										</a><a class="button button_invert" id="" href="" data-hystmodal="#popup-subscription">
+											<div class="button__title">Подписаться на рассылку</div>
+										</a></div>
+								</div>
+							</div>
+							<div class="footer__col">
+								<div class="footer__row">
+									<div class="footer__copy">Университет управления «ТИСБИ»</div>
+									<div class="footer__madein">Сделано в<a class="footer__madein-link" href="https://www.tisbi.ru/" aria-label="Университет управления «ТИСБИ»" title="Университет управления «ТИСБИ»" target="_blanc" rel="noopener"><svg class="footer__madein-logo">
+												<use href="img/svgSprite.svg#logo__tisbi_ru"></use>
+											</svg></a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+			<div class="page__darker"></div>
+			<div class="page__to-top-button" title="Наверх"><svg class="page__icon">
+					<use href="img/svgSprite.svg#icon__arrow_up"></use>
+				</svg></div>
+			<div class="hystmodal" id="popup-feedback" aria-hidden="true">
+				<div class="hystmodal__wrap">
+					<div class="hystmodal__window popup" role="dialog" aria-modal="true"><button class="hystmodal__close popup__close" data-hystclose="" title="Закрыть">Закрыть<svg class="popup__icon">
+								<use href="img/svgSprite.svg#icon__cross"></use>
+							</svg></button>
+						<div class="popup__inner">
+							<h2 class="popup__title">Связаться с нами</h2>
+							<p class="popup__descr">Если у вас есть вопросы о работе сети Ассоциированных школ ЮНЕСКО в РФ или пожелания, свяжитесь с нами</p>
+							<form class="form popup__form">
+								<div class="form__inner"><label class="form__field"><input class="input form__input" id="feedbackFio" type="text" placeholder="ФИО" required="required" /></label><label class="form__field"><input class="input form__input" id="feedbackEmail" type="email" placeholder="Электронная почта" required="required" /></label><label class="form__field"><textarea class="textarea form__textarea" id="feedbackMessage" placeholder="Сообщение" required="required"></textarea></label><button class="button button_solid button_large form__submit" id="">
+										<div class="button__title">Отправить</div>
+									</button></div><small class="form__small">Нажимая кнопку «Отправить» вы принимаете условия <a class='link' href='#' target='_blank'>Пользовательского соглашения</a> и даёте согласие на обработку своих персональных данных на условиях, определенных <a class='link' href='#' target='_blank'>Политикой конфиденциальности</a>.</small><small class="form__small">Этот сайт защищён reCAPTCHA и использует <a class='link' href='https://policies.google.com/privacy' target='_blank'>Политику конфиденциальности</a> и <a class='link' href='https://policies.google.com/terms' target='_blank'>Условия использования Google</a>.</small>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hystmodal" id="popup-feedback-thanks" aria-hidden="true">
+				<div class="hystmodal__wrap">
+					<div class="hystmodal__window popup" role="dialog" aria-modal="true"><button class="hystmodal__close popup__close" data-hystclose="" title="Закрыть">Закрыть<svg class="popup__icon">
+								<use href="img/svgSprite.svg#icon__cross"></use>
+							</svg></button>
+						<div class="popup__inner">
+							<h2 class="popup__title">Мы получили ваше сообщение</h2>
+							<p class="popup__descr">Мы свяжемся с вами</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hystmodal" id="popup-subscription" aria-hidden="true">
+				<div class="hystmodal__wrap">
+					<div class="hystmodal__window popup" role="dialog" aria-modal="true"><button class="hystmodal__close popup__close" data-hystclose="" title="Закрыть">Закрыть<svg class="popup__icon">
+								<use href="img/svgSprite.svg#icon__cross"></use>
+							</svg></button>
+						<div class="popup__inner">
+							<h2 class="popup__title">Подписаться на рассылку</h2>
+							<p class="popup__descr">Новости и мероприятия сети Ассоциированных школ ЮНЕСКО в РФ</p>
+							<form class="form popup__form">
+								<div class="form__inner"><label class="form__field"><input class="input form__input" id="subscriptionFio" type="text" placeholder="ФИО" required="required" /></label><label class="form__field"><input class="input form__input" id="subscriptionEmail" type="email" placeholder="Электронная почта" required="required" /></label><button class="button button_solid button_large form__submit" id="">
+										<div class="button__title">Подписаться</div>
+									</button></div><small class="form__small">Нажимая кнопку «Подписаться» вы принимаете условия <a class='link' href='#' target='_blank'>Пользовательского соглашения</a> и даёте согласие на обработку своих персональных данных на условиях, определенных <a class='link' href='#' target='_blank'>Политикой конфиденциальности</a>.</small><small class="form__small">Этот сайт защищён reCAPTCHA и использует <a class='link' href='https://policies.google.com/privacy' target='_blank'>Политику конфиденциальности</a> и <a class='link' href='https://policies.google.com/terms' target='_blank'>Условия использования Google</a>.</small>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hystmodal" id="popup-subscription-thanks" aria-hidden="true">
+				<div class="hystmodal__wrap">
+					<div class="hystmodal__window popup" role="dialog" aria-modal="true"><button class="hystmodal__close popup__close" data-hystclose="" title="Закрыть">Закрыть<svg class="popup__icon">
+								<use href="img/svgSprite.svg#icon__cross"></use>
+							</svg></button>
+						<div class="popup__inner">
+							<h2 class="popup__title">Вы подписаны на рассылку</h2>
+							<p class="popup__descr">Проверьте почту</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><script src="js/bundle.js"></script>
+	</body>
+</html>
