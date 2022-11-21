@@ -208,6 +208,19 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
 												</label><label class="form__field">
 													<div class="form__label" data-required="data-required">Краткое название</div><textarea class="textarea form__textarea" id="regShortName" placeholder="Например, Средняя общеобразовательная школа № 333, г. Санкт-Петербург" required="required"></textarea>
 												</label><label class="form__field">
+													<div class="form__label">Логотип школы</div><label class="input-file form__input"><input type="file" required="" />
+														<div class="input-file__fake-input">
+															<div class="input-file__title">Кликните для выбора файла</div>
+														</div>
+													</label>
+													<div class="form__field-info">
+														<p class="form__field-info-p">Требования к логотипу:</p>
+														<ul class="form__field-info-list">
+															<li class="form__field-info-li">Квадратная форма</li>
+															<li class="form__field-info-li">Что-то ещё</li>
+														</ul>
+													</div>
+												</label><label class="form__field">
 													<div class="form__label" data-required="data-required">Уровень образования</div><select class="select form__select" name="level" required="required">
 														<option value="0">Выберите один из уровней</option>
 														<option value="1">дошкольные учреждения</option>

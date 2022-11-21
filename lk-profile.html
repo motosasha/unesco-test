@@ -155,18 +155,8 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
 					<div class="grid">
 						<div class="section__inner">
 							<div class="section__block">
-								<div class="section__grid">
-									<div class="section__col section__col_3"></div>
-									<div class="section__col section__col_9">
-										<div class="lk__header">
-											<h2 class="lk__title" data-subtitle="Профиль">Средняя общеобразовательная школа № 333, г. Санкт-Петербург</h2><a class="lk__my-page" href="#">Страница школы<svg class="lk__my-page-icon">
-													<use xlink:href="img/svgSprite.svg#icon__arrow_right"></use>
-												</svg></a>
-										</div>
-									</div>
-								</div>
-								<div class="section__grid">
-									<div class="section__col section__col_3 section__col_2_d section__col_offset_1_d">
+								<div class="section__grid lk__nav">
+									<div class="section__col section__col_8_d section__col_offset_3_d">
 										<div class="lk-nav">
 											<div class="lk-nav__scroll">
 												<ul class="lk-nav__inner">
@@ -177,194 +167,205 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
 													<li class="lk-nav__item"><a class="lk-nav__link" href="lk-events.html">Мероприятия</a></li>
 													<li class="lk-nav__item"><a class="lk-nav__link" href="lk-messages.html">Сообщения</a></li>
 													<li class="lk-nav__item"><a class="lk-nav__link" href="lk-reports.html">Отчёты</a></li>
-													<li class="lk-nav__item">
-														<div class="lk-nav__link">Выход</div>
-													</li>
 												</ul>
 											</div>
 										</div>
 									</div>
-									<div class="section__col section__col_9 section__col_7_d">
+								</div>
+								<div class="section__grid">
+									<div class="section__col section__col_8_d section__col_offset_3_d">
+										<div class="lk-school-header"><img class="lk-school-header__logo" src="assets/img__school_filler_l.webp" alt="lang.pages.lkProfile.title" />
+											<div class="lk-school-header__info">
+												<h2 class="lk-school-header__title">Средняя общеобразовательная школа № 333, г. Санкт-Петербург</h2>
+												<div class="lk-school-header__row">
+													<div class="lk-school-header__status"><svg class="lk-school-header__icon">
+															<use href="img/svgSprite.svg#icon__certificate"></use>
+														</svg>Ассоциированная школа ЮНЕСКО</div><a class="lk-school-header__page" href="#">Страница школы<svg class="lk-school-header__icon">
+															<use xlink:href="img/svgSprite.svg#icon__arrow_right"></use>
+														</svg></a>
+												</div>
+											</div>
+										</div>
+										<div class="lk-status lk__status">
+											<div class="lk-status__title">Завершение регистрации</div>
+											<div class="lk-status__descr">Ваш статус: <span>Нужна модерация</span></div>
+											<div class="lk-status__descr">Вы успешно зарегистрированы, но для продолжения работы вы должны пройти модерацию вашей учётной записи</div><button class="button button_solid lk-status__button" id="">
+												<div class="button__title">Отправить на модерацию</div>
+											</button>
+										</div>
+										<div class="lk-message lk__message lk-message_success">
+											<div class="lk-message__content">Ваша учётная запись <strong>подтверждена</strong></div>
+											<div class="lk-message__close"><svg class="lk-message__icon">
+													<use xlink:href="img/svgSprite.svg#icon__cross"></use>
+												</svg></div>
+										</div>
+									</div>
+								</div>
+								<div class="section__grid">
+									<div class="section__col section__col_3 section__col_2_d section__col_offset_1_d">
 										<div class="lk-tabs">
 											<div class="lk-tabs__caption">
 												<div class="lk-tabs__scroll">
 													<ul class="lk-tabs__head">
-														<li class="lk-tabs__tab lk-tabs__tab_active" data-href="#main">Основная информация</li>
+														<li class="lk-tabs__tab lk-tabs__tab_active" data-href="#main">Информация</li>
 														<li class="lk-tabs__tab" data-href="#membership">Членство в сети</li>
-														<li class="lk-tabs__tab" data-href="#password">Пароль</li>
+														<li class="lk-tabs__tab" data-href="#security">Безопасность</li>
 													</ul>
 												</div>
 											</div>
-											<form class="form">
-												<div class="lk-tabs__body">
-													<div class="lk-tabs__content lk-tabs__content_active" id="main">
-														<div class="lk__form">
-															<div class="form__inner">
-																<div class="lk__form-title">Основная информация</div><label class="form__field">
-																	<div class="form__label" data-required="data-required">Полное название организации</div><textarea class="textarea form__textarea" id="regFullName" placeholder="Например, Государственное бюджетное общеобразовательное учреждение средняя общеобразовательная школа № 333 Невского района Санкт-Петербурга" required="required"></textarea>
-																</label><label class="form__field">
-																	<div class="form__label" data-required="data-required">Краткое название</div><textarea class="textarea form__textarea" id="regShortName" placeholder="Например, Средняя общеобразовательная школа № 333, г. Санкт-Петербург" required="required"></textarea>
-																</label><label class="form__field">
-																	<div class="form__label" data-required="data-required">Уровень образования</div><select class="select form__select" name="level" required="required">
-																		<option value="0">Выберите один из уровней</option>
-																		<option value="1">дошкольные учреждения</option>
-																		<option value="2">начальные школы</option>
-																		<option value="3">средние школы</option>
-																		<option value="4">СПО</option>
-																		<option value="5">педагогические учреждения</option>
-																		<option value="6">охватывающие несколько уровней образования</option>
-																		<option value="7">учреждения неформального образования</option>
-																	</select>
-																</label><label class="form__field">
-																	<div class="form__label" data-required="data-required">Официальный статус</div><select class="select form__select" name="status" required="">
-																		<option value="0">Выберите статус</option>
-																		<option value="1">частные учреждения</option>
-																		<option value="2">государственные учреждения</option>
-																		<option value="3">смешанные/другие виды учреждений</option>
-																	</select>
-																</label>
-															</div>
-															<div class="form__inner">
-																<div class="lk__form-title">Контактная информация</div><label class="form__field">
-																	<div class="form__label" data-required="data-required">Почтовый адрес</div><textarea class="textarea form__textarea" id="regAddress" placeholder="Почтовый индекс, субъект Российской Федерации, город, улица (переулок, бульвар), номер дома" required="required"></textarea>
-																</label><label class="form__field">
-																	<div class="form__label" data-required="data-required">Географическое положение</div><input class="input form__input" id="regCity" type="text" placeholder="Город, населённый пункт" required="required" />
-																</label><label class="form__field">
-																	<div class="form__label" data-required="data-required">Телефон (с кодом города)</div><input class="input form__input" id="regPhone" type="tel" placeholder="+7 (000) 000-00-00" required="required" />
-																</label><label class="form__field">
-																	<div class="form__label" data-required="data-required">Электронная почта</div><input class="input form__input" id="regEmail" type="email" placeholder="example@mail.ru" required="required" />
-																</label><label class="form__field">
-																	<div class="form__label" data-required="data-required">Официальный сайт</div><input class="input form__input" id="regWebsite" type="text" placeholder="example.ru" required="required" />
-																</label>
-															</div>
-															<div class="form__inner">
-																<div class="lk__form-title">Директор школы</div><label class="form__field">
-																	<div class="form__label" data-required="data-required">Фамилия</div><input class="input form__input" id="regDirLastName" type="text" placeholder="Иванов" required="required">
-																</label><label class="form__field">
-																	<div class="form__label" data-required="data-required">Имя</div><input class="input form__input" id="regDirFirstName" type="text" placeholder="Иван" required="required">
-																</label><label class="form__field">
-																	<div class="form__label" data-required="data-required">Отчество</div><input class="input form__input" id="regDirSecondName" type="text" placeholder="Иванович" required="required">
-																</label><label class="form__field">
-																	<div class="form__label" data-required="data-required">Должность</div><textarea class="textarea form__textarea" id="regDirPost" placeholder="" required="required"></textarea>
-																</label><label class="form__field">
-																	<div class="form__label" data-required="data-required">Фото директора</div>
-																	<div class="form__file"><img class="form__file-img" src="assets/img__person_director.webp" alt="">
-																		<div class="form__file-remove"><svg class="form__file-close">
-																				<use href="img/svgSprite.svg#icon__cross"></use>
-																			</svg></div>
+										</div>
+									</div>
+									<div class="section__col section__col_9 section__col_8_d">
+										<div class="lk-tabs">
+											<div class="lk-tabs__body">
+												<div class="lk-tabs__content lk-tabs__content_active" id="main">
+													<div class="lk-info">
+														<div class="lk-info__section">
+															<h3 class="lk-info__title">Основная информация</h3>
+															<div class="inner-grid inner-grid_profile">
+																<div class="inner-grid__section">
+																	<div class="inner-grid__col">
+																		<h4 class="inner-grid__title">Полное название организации</h4>
 																	</div>
-																</label><label class="form__field">
-																	<div class="form__label" data-required="data-required">Электронный почта директора</div><input class="input form__input" id="regDirEmail" type="email" placeholder="example@mail.ru" required="required">
-																</label><label class="checkbox"><input class="checkbox__input" id="isCoordinator" type="checkbox" />
-																	<div class="checkbox__fake-input"></div>
-																	<div class="checkbox__label">Директор является координатором школы</div>
-																</label>
-															</div>
-															<div class="form__inner">
-																<div class="lk__form-title">Координатор школы</div><label class="form__field">
-																	<div class="form__label" data-required="data-required">Фамилия</div><input class="input form__input" id="regCoordinatorLastName" type="text" placeholder="Петров" required="required" />
-																</label><label class="form__field">
-																	<div class="form__label" data-required="data-required">Имя</div><input class="input form__input" id="regCoordinatorFirstName" type="text" placeholder="Пётр" required="required" />
-																</label><label class="form__field">
-																	<div class="form__label" data-required="data-required">Отчество</div><input class="input form__input" id="regCoordinatorSecondName" type="text" placeholder="Петрович" required="required" />
-																</label><label class="form__field">
-																	<div class="form__label" data-required="data-required">Должность</div><textarea class="textarea form__textarea" id="regCoordinatorPost" placeholder="" required="required"></textarea>
-																</label><label class="form__field">
-																	<div class="form__label" data-required="data-required">Фото координатора</div><label class="input-file form__input"><input type="file" required="required" />
-																		<div class="input-file__fake-input">
-																			<div class="input-file__title">Кликните для выбора файла</div>
-																		</div>
-																	</label>
-																</label><label class="form__field">
-																	<div class="form__label" data-required="data-required">Электронный почта директора</div><input class="input form__input" id="regCoordinatorEmail" type="email" placeholder="example@mail.ru" required="required" />
-																</label>
-															</div>
-															<div class="form__inner">
-																<div class="lk__form-title">Основные темы</div>
-																<div class="form__field">
-																	<div class="form__label" data-required>Выберите основные темы, соответствующие вашей деятельности, можно несколько</div>
-																	<div class="selectizer"><label class="selectizer__item"><input class="selectizer__checkbox" type="checkbox" value="0" name="themes" required="">
-																			<div class="selectizer__button">Образование</div>
-																		</label><label class="selectizer__item"><input class="selectizer__checkbox" type="checkbox" value="1" name="themes" required="">
-																			<div class="selectizer__button">Наука</div>
-																		</label><label class="selectizer__item"><input class="selectizer__checkbox" type="checkbox" value="2" name="themes" required="">
-																			<div class="selectizer__button">Культура</div>
-																		</label><label class="selectizer__item"><input class="selectizer__checkbox" type="checkbox" value="3" name="themes" required="">
-																			<div class="selectizer__button">Коммуникация и информация</div>
-																		</label><label class="selectizer__item"><input class="selectizer__checkbox" type="checkbox" value="4" name="themes" required="">
-																			<div class="selectizer__button">ООН и ЮНЕСКО</div>
-																		</label><label class="selectizer__item"><input class="selectizer__checkbox" type="checkbox" value="5" name="themes" required="">
-																			<div class="selectizer__button">Окружающая среда</div>
-																		</label></div>
+																	<div class="inner-grid__col">
+																		<div class="lk-info__line">Государственное бюджетное общеобразовательное учреждение средняя общеобразовательная школа № 333 Невского района Санкт-Петербурга</div>
+																	</div>
+																</div>
+																<div class="inner-grid__section">
+																	<div class="inner-grid__col">
+																		<h4 class="inner-grid__title">Краткое название</h4>
+																	</div>
+																	<div class="inner-grid__col">
+																		<div class="lk-info__line">Средняя общеобразовательная школа № 333, г. Санкт-Петербург</div>
+																	</div>
+																</div>
+																<div class="inner-grid__section">
+																	<div class="inner-grid__col">
+																		<h4 class="inner-grid__title">Регион</h4>
+																	</div>
+																	<div class="inner-grid__col">
+																		<div class="lk-info__line">балтика-север</div>
+																	</div>
+																</div>
+																<div class="inner-grid__section">
+																	<div class="inner-grid__col">
+																		<h4 class="inner-grid__title">Уровень образования</h4>
+																	</div>
+																	<div class="inner-grid__col">
+																		<div class="lk-info__line">средние школы</div>
+																	</div>
+																</div>
+																<div class="inner-grid__section">
+																	<div class="inner-grid__col">
+																		<h4 class="inner-grid__title">Официальный статус</h4>
+																	</div>
+																	<div class="inner-grid__col">
+																		<div class="lk-info__line">государственные учреждения</div>
+																	</div>
 																</div>
 															</div>
-															<div class="form__inner">
-																<div class="lk__form-title">Социальные сети</div><label class="form__field">
-																	<div class="form__label">ВКонтакте</div><input class="input form__input" id="regSocialVK" type="text" placeholder="https://vk.com/groupname" />
-																</label><label class="form__field">
-																	<div class="form__label">Телеграм</div><input class="input form__input" id="regSocialTG" type="text" placeholder="https://t.me/@name" />
-																</label><label class="form__field">
-																	<div class="form__label">Инстаграм</div><input class="input form__input" id="regSocialIG" type="text" placeholder="@name" />
-																</label>
-															</div><button class="button button_solid button_large form__submit">
-																<div class="button__title">Сохранить</div>
-															</button>
 														</div>
-													</div>
-													<div class="lk-tabs__content" id="membership">
-														<div class="lk__form">
-															<div class="form__inner">
-																<div class="lk__form-title">Ассоциированная школа ЮНЕСКО</div>
-																<p class="paragraph registration__descr">Если сертификат был утерян вы можете запросить письмо-подтверждение от национального координатора и загрузить его вместо сертификата проставив галочку «Сертификат утерян»</p>
-																<div class="form__inner"><label class="form__field">
-																		<div class="form__label" data-required="data-required">Сертификат или письмо-подтверждение от национального координатора</div>
-																		<div class="form__file"><a class="document-link" href="#" target="_blank"><svg class="document-link__icon">
-																					<use href="img/svgSprite.svg#icon__file_pdf"></use>
-																				</svg>
-																				<div class="document-link__inner">
-																					<div class="document-link__title">Письмо-подтверждение от национального координатора</div>
-																					<div class="document-link__descr">12.2mb</div>
+														<div class="lk-info__section">
+															<h3 class="lk-info__title">Направления деятельности</h3>
+															<div class="inner-grid">
+																<div class="inner-grid__section">
+																	<div class="inner-grid__col">
+																		<h4 class="inner-grid__title">Направления деятельности</h4>
+																	</div>
+																	<div class="inner-grid__col">
+																		<div class="tags">
+																			<div class="tags__inner"><a class="tags__item" href="#">Глобальная гражданственность</a><a class="tags__item" href="#">Культура мира и ненасилия</a><a class="tags__item" href="#">Устойчивое развитие</a><a class="tags__item" href="#">Устойчивый образ жизни</a><a class="tags__item" href="#">Межкультурное образование</a><a class="tags__item" href="#">Культурное наследие</a></div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="lk-info__section">
+															<h3 class="lk-info__title">Контакты</h3>
+															<div class="inner-grid inner-grid_people">
+																<div class="inner-grid__section inner-grid__section_school">
+																	<div class="inner-grid__col">
+																		<h4 class="inner-grid__title">Директор школы</h4>
+																	</div>
+																	<div class="inner-grid__col">
+																		<div class="person"><img class="person__img" src="assets/img__person_director.webp" alt="Дубровин Валерий Александрович" />
+																			<div class="person__inner">
+																				<div class="person__title"><span>Дубровин</span> Валерий Александрович</div>
+																				<div class="person__descr">Доцент педагогических наук, директор средней общеобразовательной школа № 333, г. Санкт-Петербург</div>
+																				<div class="person__info">
+																					<div class="person__info-row"><a class="person__link" href="mailto:example@mail.ru">example@mail.ru</a></div>
 																				</div>
-																			</a>
-																			<div class="form__file-remove"><svg class="form__file-close">
-																					<use href="img/svgSprite.svg#icon__cross"></use>
-																				</svg></div>
+																			</div>
 																		</div>
-																	</label><label class="form__field"><label class="checkbox"><input class="checkbox__input input_has-value" id="certificateLost" type="checkbox" checked>
-																			<div class="checkbox__fake-input"></div>
-																			<div class="checkbox__label">Сертификат утерян</div>
-																		</label></label><label class="form__field">
-																		<div class="form__label">Ссылка на страницу школы на международном сайте ЮНЕСКО</div><input class="input form__input" type="text" placeholder="https://aspnet.unesco.org/en-us/Lists/Schools/PublicDispForm.aspx?ID=00000">
-																	</label></div>
-															</div><button class="button button_solid button_large form__submit">
-																<div class="button__title">Сохранить</div>
-															</button>
-														</div>
-													</div>
-													<div class="lk-tabs__content" id="password">
-														<div class="lk__form">
-															<div class="form__inner">
-																<div class="lk__form-title">Изменить пароль</div>
-																<div class="form-message form-message_success">Пароль изменён</div>
-																<div class="form-message form-message_error">Ошибка</div><label class="form__field">
-																	<div class="form__label" data-required="data-required">Старый пароль</div><input class="input form__input" id="oldPassword" type="password" placeholder="" required="required" autocomplete="off">
-																</label><label class="form__field">
-																	<div class="form__label" data-required="data-required">Новый пароль</div><input class="input form__input" id="newPassword" type="password" placeholder="" required="required" autocomplete="off">
-																</label>
-																<div class="form__field-info">
-																	<p class="form__field-info-p">Требования к паролю:</p>
-																	<ul class="form__field-info-list">
-																		<li class="form__field-info-li">Длина не менее 8 символов</li>
-																		<li class="form__field-info-li">Латинские буквы, цифры, специальные символы</li>
-																	</ul>
+																	</div>
 																</div>
-															</div><button class="button button_solid button_large form__submit">
-																<div class="button__title">Сохранить</div>
-															</button>
+																<div class="inner-grid__section inner-grid__section_school">
+																	<div class="inner-grid__col">
+																		<h4 class="inner-grid__title">Координатор школы</h4>
+																	</div>
+																	<div class="inner-grid__col">
+																		<div class="person"><img class="person__img" src="assets/img__person_coordinator.webp" alt="Берёзкина Валерия Александровна" />
+																			<div class="person__inner">
+																				<div class="person__title"><span>Берёзкина</span> Валерия Александровна</div>
+																				<div class="person__descr">Кандидат педагогических наук, координатор средней общеобразовательной школа № 333, г. Санкт-Петербург</div>
+																				<div class="person__info">
+																					<div class="person__info-row"><a class="person__link" href="mailto:example@mail.ru">example@mail.ru</a></div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="person person_contacts">
+																			<div class="person__inner">
+																				<div class="person__info">
+																					<div class="person__descr">193318, г. Санкт-Петербург, ул. Белышева, дом 6, ст. А</div>
+																					<div class="person__info-row"><a class="person__link" href="tel:8 (812) 588-02-75">8 (812) 588-02-75</a></div>
+																					<div class="person__info-row"><a class="person__link" href="mailto:sb180863@mail.ru">sb180863@mail.ru</a></div>
+																					<div class="person__info-row"><a class="person__link" href="https://aspnet.unesco.org/en-us/">aspnet.unesco.org/en-us/</a><a class="person__link" href="https://333spb.edusite.ru">333spb.edusite.ru</a></div>
+																					<div class="person__info-row"><a class="person__link" href="https://vk.com/infoschool333">VK: @infoschool333</a></div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
 														</div>
 													</div>
 												</div>
-											</form>
+												<div class="lk-tabs__content" id="membership">
+													<div class="lk-info">
+														<div class="lk-info__section">
+															<h3 class="lk-info__title">Членство в сети</h3>
+															<div class="inner-grid inner-grid_profile">
+																<div class="inner-grid__section">
+																	<div class="inner-grid__col">
+																		<h4 class="inner-grid__title">Статус</h4>
+																	</div>
+																	<div class="inner-grid__col">
+																		<div class="school-status lk-info__status">
+																			<div class="school-status__status"><svg class="school-status__icon">
+																					<use href="img/svgSprite.svg#icon__certificate"></use>
+																				</svg>Ассоциированная школа ЮНЕСКО</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="inner-grid__section">
+																	<div class="inner-grid__col">
+																		<h4 class="inner-grid__title">Сертификат</h4>
+																	</div>
+																	<div class="inner-grid__col"><a class="document-link" href="#" target="_blank"><svg class="document-link__icon">
+																				<use href="img/svgSprite.svg#icon__file_pdf"></use>
+																			</svg>
+																			<div class="document-link__inner">
+																				<div class="document-link__title">Сертификат Ассоциированной школы ЮНЕСКО</div>
+																				<div class="document-link__descr">от 32 марта 2001 года</div>
+																			</div>
+																		</a></div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="lk-tabs__content" id="security">3</div>
+											</div>
 										</div>
 									</div>
 								</div>

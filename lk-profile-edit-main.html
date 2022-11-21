@@ -20,7 +20,7 @@
 		<meta name="application-name" content="Name">
 		<meta name="msapplication-TileColor" content="#0069b4">
 		<meta name="theme-color" content="#0069b4">
-		<title>Регистрация</title>
+		<title>Личный кабинет</title>
 		<meta name="description" content="Описание">
 		<meta name="keywords" content="Ключевые слова">
 		<link rel="stylesheet" href="css/style.css"><script>// Убрать на html класс "no-js", добавить класс "js": с уровня стилей знаем работает ли JS
@@ -81,11 +81,13 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
 											<div class="button__title">Присоединиться к сети</div>
 										</a></div>
 									<div class="header__row">
-										<div class="buttons-set"><a class="button" id="" href="registration.html">
-												<div class="button__title">Регистрация</div>
-											</a><a class="button" id="" href="login.html">
-												<div class="button__title">Вход</div>
-											</a></div>
+										<div class="buttons-set"><a class="button" id="" href="lk-profile.html">
+												<div class="button__title">Кабинет</div>
+											</a>
+											<div class="button" id="">
+												<div class="button__title">Выход</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -129,11 +131,13 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
 											<div class="button__title">+7 950 123 45 67</div>
 										</a></div>
 									<div class="nav__row">
-										<div class="buttons-set"><a class="button button_invert" id="" href="registration.html">
-												<div class="button__title">Регистрация</div>
-											</a><a class="button button_invert" id="" href="login.html">
-												<div class="button__title">Вход</div>
-											</a></div>
+										<div class="buttons-set"><a class="button button_invert" id="" href="lk-profile.html">
+												<div class="button__title">Кабинет</div>
+											</a>
+											<div class="button button_invert" id="">
+												<div class="button__title">Выход</div>
+											</div>
+										</div>
 									</div>
 									<div class="nav__row"><a class="button button_invert" id="" href="join.html"><svg class="button__icon">
 												<use href="img/svgSprite.svg#icon__globe"></use>
@@ -147,63 +151,35 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
 				</div>
 			</div>
 			<div class="page__main">
-				<section class="section registration">
+				<section class="section lk">
 					<div class="grid">
-						<form class="form">
-							<div class="section__inner">
-								<div class="section__block">
-									<div class="section__grid">
-										<div class="section__col section__col_3"></div>
-										<div class="section__col section__col_9">
-											<h2 class="section__title" data-subtitle="Регистрация">Ассоциированная школа <span>ЮНЕСКО</span></h2>
-										</div>
-									</div>
-									<div class="section__grid">
-										<div class="section__col section__col_3 section__col_2_d section__col_offset_1_d">
-											<h3 class="section__subtitle">Местоположение</h3>
-										</div>
-										<div class="section__col section__col_5">
-											<div class="form__inner">
-												<div class="form__field">
-													<div class="form__label" data-required>Регион деятельности</div>
-													<div class="selectizer"><label class="selectizer__item"><input class="selectizer__radio" type="radio" value="0" name="region" required="">
-															<div class="selectizer__button">Москва</div>
-														</label><label class="selectizer__item"><input class="selectizer__radio" type="radio" value="1" name="region" required="">
-															<div class="selectizer__button">Юг-Кавказ</div>
-														</label><label class="selectizer__item"><input class="selectizer__radio" type="radio" value="2" name="region" required="">
-															<div class="selectizer__button">Волга</div>
-														</label><label class="selectizer__item"><input class="selectizer__radio" type="radio" value="3" name="region" required="">
-															<div class="selectizer__button">Урал</div>
-														</label><label class="selectizer__item"><input class="selectizer__radio" type="radio" value="4" name="region" required="">
-															<div class="selectizer__button">Сибирь-Алтай</div>
-														</label><label class="selectizer__item"><input class="selectizer__radio" type="radio" value="5" name="region" required="">
-															<div class="selectizer__button">Центр</div>
-														</label><label class="selectizer__item"><input class="selectizer__radio" type="radio" value="6" name="region" required="">
-															<div class="selectizer__button">Балтика-Север</div>
-														</label><label class="selectizer__item"><input class="selectizer__radio" type="radio" value="7" name="region" required="">
-															<div class="selectizer__button">Саха-Байкал</div>
-														</label><label class="selectizer__item"><input class="selectizer__radio" type="radio" value="8" name="region" required="">
-															<div class="selectizer__button">Башкортостан</div>
-														</label></div>
-												</div><label class="form__field">
-													<div class="form__label" data-required="data-required">Регион Российской Федерации</div><select class="select form__select" name="locationRF" required="">
-														<option value="0">Выберите регион</option>
-														<option value="1">Первый</option>
-														<option value="2">Второй</option>
-														<option value="3">Восемдесят девятый</option>
-													</select>
-												</label>
+						<div class="section__inner">
+							<div class="section__block">
+								<div class="section__grid lk__nav">
+									<div class="section__col section__col_9_d section__col_offset_3_d">
+										<div class="lk-nav">
+											<div class="lk-nav__scroll">
+												<ul class="lk-nav__inner">
+													<li class="lk-nav__item"><a class="lk-nav__link" href="lk-profile.html">Профиль</a></li>
+													<li class="lk-nav__item"><a class="lk-nav__link" href="lk-news.html">Новости</a></li>
+													<li class="lk-nav__item"><a class="lk-nav__link" href="lk-events.html">Мероприятия</a></li>
+													<li class="lk-nav__item"><a class="lk-nav__link" href="lk-messages.html">Сообщения</a></li>
+													<li class="lk-nav__item"><a class="lk-nav__link" href="lk-reports.html">Отчёты</a></li>
+												</ul>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="section__block">
-									<div class="section__grid">
-										<div class="section__col section__col_3 section__col_2_d section__col_offset_1_d">
-											<h3 class="section__subtitle">Основная информация</h3>
-										</div>
-										<div class="section__col section__col_5">
-											<div class="form__inner"><label class="form__field">
+								<div class="section__grid">
+									<div class="section__col section__col_9_d section__col_offset_3_d">
+										<h2 class="lk__title">Редактирование информации</h2>
+									</div>
+								</div>
+								<div class="section__grid">
+									<div class="section__col section__col_9_d section__col_offset_3_d">
+										<form class="lk__form form">
+											<div class="form__inner">
+												<div class="lk__form-title">Основная информация</div><label class="form__field">
 													<div class="form__label" data-required="data-required">Полное название организации</div><textarea class="textarea form__textarea" id="regFullName" placeholder="Например, Государственное бюджетное общеобразовательное учреждение средняя общеобразовательная школа № 333 Невского района Санкт-Петербурга" required="required"></textarea>
 												</label><label class="form__field">
 													<div class="form__label" data-required="data-required">Краткое название</div><textarea class="textarea form__textarea" id="regShortName" placeholder="Например, Средняя общеобразовательная школа № 333, г. Санкт-Петербург" required="required"></textarea>
@@ -238,38 +214,10 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
 														<option value="2">государственные учреждения</option>
 														<option value="3">смешанные/другие виды учреждений</option>
 													</select>
-												</label></div>
-										</div>
-									</div>
-								</div>
-								<div class="section__block">
-									<div class="section__grid">
-										<div class="section__col section__col_3 section__col_2_d section__col_offset_1_d">
-											<h3 class="section__subtitle">Данные для авторизации</h3>
-										</div>
-										<div class="section__col section__col_5">
-											<div class="form__inner"><label class="form__field">
-													<div class="form__label" data-required="data-required">Электронный адрес организации, будет использоваться как логин</div><input class="input form__input" id="regLoginEmail" type="email" placeholder="example@mail.ru" required="required" />
-												</label><label class="form__field">
-													<div class="form__label" data-required="data-required">Пароль</div><input class="input form__input" id="regPassword" type="password" placeholder="" required="required" />
-													<div class="form__field-info">
-														<p class="form__field-info-p">Требования к паролю:</p>
-														<ul class="form__field-info-list">
-															<li class="form__field-info-li">Длина не менее 8 символов</li>
-															<li class="form__field-info-li">Латинские буквы, цифры, специальные символы</li>
-														</ul>
-													</div>
-												</label></div>
-										</div>
-									</div>
-								</div>
-								<div class="section__block">
-									<div class="section__grid">
-										<div class="section__col section__col_3 section__col_2_d section__col_offset_1_d">
-											<h3 class="section__subtitle">Контактная информация</h3>
-										</div>
-										<div class="section__col section__col_5">
-											<div class="form__inner"><label class="form__field">
+												</label>
+											</div>
+											<div class="form__inner">
+												<div class="lk__form-title">Контактная информация</div><label class="form__field">
 													<div class="form__label" data-required="data-required">Почтовый адрес</div><textarea class="textarea form__textarea" id="regAddress" placeholder="Почтовый индекс, субъект Российской Федерации, город, улица (переулок, бульвар), номер дома" required="required"></textarea>
 												</label><label class="form__field">
 													<div class="form__label" data-required="data-required">Географическое положение</div><input class="input form__input" id="regCity" type="text" placeholder="Город, населённый пункт" required="required" />
@@ -279,46 +227,33 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
 													<div class="form__label" data-required="data-required">Электронная почта</div><input class="input form__input" id="regEmail" type="email" placeholder="example@mail.ru" required="required" />
 												</label><label class="form__field">
 													<div class="form__label" data-required="data-required">Официальный сайт</div><input class="input form__input" id="regWebsite" type="text" placeholder="example.ru" required="required" />
-												</label></div>
-										</div>
-									</div>
-								</div>
-								<div class="section__block">
-									<div class="section__grid">
-										<div class="section__col section__col_3 section__col_2_d section__col_offset_1_d">
-											<h3 class="section__subtitle">Директор школы</h3>
-										</div>
-										<div class="section__col section__col_5">
-											<div class="form__inner"><label class="form__field">
-													<div class="form__label" data-required="data-required">Фамилия</div><input class="input form__input" id="regDirLastName" type="text" placeholder="Иванов" required="required" />
+												</label>
+											</div>
+											<div class="form__inner">
+												<div class="lk__form-title">Директор школы</div><label class="form__field">
+													<div class="form__label" data-required="data-required">Фамилия</div><input class="input form__input" id="regDirLastName" type="text" placeholder="Иванов" required="required">
 												</label><label class="form__field">
-													<div class="form__label" data-required="data-required">Имя</div><input class="input form__input" id="regDirFirstName" type="text" placeholder="Иван" required="required" />
+													<div class="form__label" data-required="data-required">Имя</div><input class="input form__input" id="regDirFirstName" type="text" placeholder="Иван" required="required">
 												</label><label class="form__field">
-													<div class="form__label" data-required="data-required">Отчество</div><input class="input form__input" id="regDirSecondName" type="text" placeholder="Иванович" required="required" />
+													<div class="form__label" data-required="data-required">Отчество</div><input class="input form__input" id="regDirSecondName" type="text" placeholder="Иванович" required="required">
 												</label><label class="form__field">
 													<div class="form__label" data-required="data-required">Должность</div><textarea class="textarea form__textarea" id="regDirPost" placeholder="" required="required"></textarea>
 												</label><label class="form__field">
-													<div class="form__label" data-required="data-required">Фото директора</div><label class="input-file form__input"><input type="file" required="required" />
-														<div class="input-file__fake-input">
-															<div class="input-file__title">Кликните для выбора файла</div>
-														</div>
-													</label>
+													<div class="form__label" data-required="data-required">Фото директора</div>
+													<div class="form__file"><img class="form__file-img" src="assets/img__person_director.webp" alt="">
+														<div class="form__file-remove"><svg class="form__file-close">
+																<use href="img/svgSprite.svg#icon__cross"></use>
+															</svg></div>
+													</div>
 												</label><label class="form__field">
-													<div class="form__label" data-required="data-required">Электронный почта директора</div><input class="input form__input" id="regDirEmail" type="email" placeholder="example@mail.ru" required="required" />
+													<div class="form__label" data-required="data-required">Электронный почта директора</div><input class="input form__input" id="regDirEmail" type="email" placeholder="example@mail.ru" required="required">
 												</label><label class="checkbox"><input class="checkbox__input" id="isCoordinator" type="checkbox" />
 													<div class="checkbox__fake-input"></div>
 													<div class="checkbox__label">Директор является координатором школы</div>
-												</label></div>
-										</div>
-									</div>
-								</div>
-								<div class="section__block">
-									<div class="section__grid">
-										<div class="section__col section__col_3 section__col_2_d section__col_offset_1_d">
-											<h3 class="section__subtitle">Координатор школы</h3>
-										</div>
-										<div class="section__col section__col_5">
-											<div class="form__inner"><label class="form__field">
+												</label>
+											</div>
+											<div class="form__inner">
+												<div class="lk__form-title">Координатор школы</div><label class="form__field">
 													<div class="form__label" data-required="data-required">Фамилия</div><input class="input form__input" id="regCoordinatorLastName" type="text" placeholder="Петров" required="required" />
 												</label><label class="form__field">
 													<div class="form__label" data-required="data-required">Имя</div><input class="input form__input" id="regCoordinatorFirstName" type="text" placeholder="Пётр" required="required" />
@@ -334,39 +269,10 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
 													</label>
 												</label><label class="form__field">
 													<div class="form__label" data-required="data-required">Электронный почта директора</div><input class="input form__input" id="regCoordinatorEmail" type="email" placeholder="example@mail.ru" required="required" />
-												</label></div>
-										</div>
-									</div>
-								</div>
-								<div class="section__block">
-									<div class="section__grid">
-										<div class="section__col section__col_3 section__col_2_d section__col_offset_1_d">
-											<h3 class="section__subtitle">Ассоциированная школа ЮНЕСКО</h3>
-										</div>
-										<div class="section__col section__col_5">
-											<p class="paragraph registration__descr">Если сертификат был утерян вы можете запросить письмо-подтверждение от национального координатора и загрузить его вместо сертификата проставив галочку «Сертификат утерян»</p>
-											<div class="form__inner"><label class="form__field">
-													<div class="form__label" data-required="data-required">Сертификат или письмо-подтверждение от национального координатора</div><label class="input-file form__input"><input type="file" required="required" />
-														<div class="input-file__fake-input">
-															<div class="input-file__title">Кликните для выбора файла</div>
-														</div>
-													</label>
-												</label><label class="form__field"><label class="checkbox"><input class="checkbox__input" id="certificateLost" type="checkbox" />
-														<div class="checkbox__fake-input"></div>
-														<div class="checkbox__label">Сертификат утерян</div>
-													</label></label><label class="form__field">
-													<div class="form__label">Ссылка на страницу школы на международном сайте ЮНЕСКО</div><input class="input form__input" type="text" placeholder="https://aspnet.unesco.org/en-us/Lists/Schools/PublicDispForm.aspx?ID=00000" />
-												</label></div>
-										</div>
-									</div>
-								</div>
-								<div class="section__block">
-									<div class="section__grid">
-										<div class="section__col section__col_3 section__col_2_d section__col_offset_1_d">
-											<h3 class="section__subtitle">Основные темы</h3>
-										</div>
-										<div class="section__col section__col_5">
+												</label>
+											</div>
 											<div class="form__inner">
+												<div class="lk__form-title">Основные темы</div>
 												<div class="form__field">
 													<div class="form__label" data-required>Выберите основные темы, соответствующие вашей деятельности, можно несколько</div>
 													<div class="selectizer"><label class="selectizer__item"><input class="selectizer__checkbox" type="checkbox" value="0" name="themes" required="">
@@ -384,35 +290,22 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
 														</label></div>
 												</div>
 											</div>
-										</div>
-									</div>
-								</div>
-								<div class="section__block">
-									<div class="section__grid">
-										<div class="section__col section__col_3 section__col_2_d section__col_offset_1_d">
-											<h3 class="section__subtitle">Социальные сети</h3>
-										</div>
-										<div class="section__col section__col_5">
-											<div class="form__inner"><label class="form__field">
+											<div class="form__inner">
+												<div class="lk__form-title">Социальные сети</div><label class="form__field">
 													<div class="form__label">ВКонтакте</div><input class="input form__input" id="regSocialVK" type="text" placeholder="https://vk.com/groupname" />
 												</label><label class="form__field">
 													<div class="form__label">Телеграм</div><input class="input form__input" id="regSocialTG" type="text" placeholder="https://t.me/@name" />
 												</label><label class="form__field">
 													<div class="form__label">Инстаграм</div><input class="input form__input" id="regSocialIG" type="text" placeholder="@name" />
-												</label></div>
-										</div>
-									</div>
-								</div>
-								<div class="section__block section__block_last">
-									<div class="section__grid">
-										<div class="section__col section__col_3"></div>
-										<div class="section__col section__col_5"><button class="button button_solid button_large form__submit">
-												<div class="button__title">Регистрация</div>
-											</button><small class="form__small">Нажимая кнопку «Регистрация» вы принимаете условия <a class='link' href='#' target='_blank'>Пользовательского соглашения</a> и даёте согласие на обработку своих персональных данных на условиях, определенных <a class='link' href='#' target='_blank'>Политикой конфиденциальности</a>.</small><small class="form__small">Этот сайт защищён reCAPTCHA и использует <a class='link' href='https://policies.google.com/privacy' target='_blank'>Политику конфиденциальности</a> и <a class='link' href='https://policies.google.com/terms' target='_blank'>Условия использования Google</a>.</small></div>
+												</label>
+											</div><button class="button button_solid button_large form__submit">
+												<div class="button__title">Сохранить</div>
+											</button>
+										</form>
 									</div>
 								</div>
 							</div>
-						</form>
+						</div>
 					</div>
 				</section>
 			</div>
